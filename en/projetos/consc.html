@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+			font-size: 12pt;
+			font-family: arial, sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Situational awareness</h1>
+
+	<hr style="height: 2px">
+	<nav>
+		<ul>
+			<li><a href="#tti">TTI</a></li>
+			<li><a href="#cdf">COD do Futuro</a></li>
+		</ul>
+	</nav>
+	<hr style="height: 2px">
+
+	<h2 id="tti">TTI</h2>
+
+	<p>
+		TTI (<i>table tran&ccedil;ante informatis&eacute;e</i>) was a project for <a
+			href="https://www.defense.gouv.fr/marine">Marine Nationale</a> to show the tactical situation around a ship
+		from the data received from different communication protocols (GPS, L11, AIS, etc.).
+	</p>
+
+	<p>
+		The main goal was to implement a distributed application of an automated tracking table allowing the
+		representation, storage, and replay of the tactical situation in real time.
+	</p>
+	<p>
+		The system comprises:
+	</p>
+	<ul>
+		<li>A PC (near or replacing the conventional tracking table) with the TTI software: it is the admin position,
+			the one who is responsible to &ldquo;draw&rdquo; the tactical situation and to correct conflicting data;
+		</li>
+		<li>A server responsible for collecting all the data and sharing them to all the computers on board.</li>
+	</ul>
+	<p>
+		Through this configuration, all computers connected to the network on board are capable of showing and
+		replaying the tactical situation.
+	</p>
+
+	<img src="../../imgs/TTI1.jpg" alt="Testes a bordo TTI - 1" width="100%" height="100%">
+
+	<figure>
+		<img src="../../imgs/TTI2.JPG" alt="Testes a bordo TTI - 2" width="100%" height="100%">
+		<figcaption>Tests being made on board the French frigate <a
+				href="https://en.wikipedia.org/wiki/French_frigate_Dupleix">Dupleix</a> in january 2011.</figcaption>
+	</figure>
+
+	<h2 id="cdf">COD do Futuro</h2>
+
+	<p>The <em>COD do Futuro</em> (Operation Center of the Future) is a research and development project (R&amp;D) of
+		Cemig Distribui&ccedil;&atilde;o in a partnership with <a href="https://www.concert.com.br/">Concert
+			Technologies</a> to implement a system of data treatment for its supervisory control and data acquisition
+		system (SCADA), aimed to increase the situational awareness of the operators.</p>
+	<p>The main goals of this project are:</p>
+	<ul>
+		<li>Development of data bus allowing the exchange of information among different databases;</li>
+		<li>An efficient system of <a href="https://en.wikipedia.org/wiki/Alarm_management">alarm management</a>;</li>
+		<li>Use of statistical inference to predict certain analogical quantities in the short run, warning the operators
+			about overloadings before they happen.</li>
+	</ul>
+
+	<p>The participation in this project consists in the treatment of analogical quantities through state estimation,
+		with the development of a drive that publishes the estimated values in the data bus and notifies when gross
+		errors are detected.</p>
+</body>
+
+</html>

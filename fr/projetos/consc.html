@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+			font-size: 12pt;
+			font-family: arial, sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Conscience de la situation</h1>
+
+	<hr style="height: 2px">
+	<nav>
+		<ul>
+			<li><a href="#tti">TTI</a></li>
+			<li><a href="#cdf">COD do Futuro</a></li>
+		</ul>
+	</nav>
+	<hr style="height: 2px">
+
+	<h2 id="tti">TTI</h2>
+	<p>
+		La TTI (<i>table tran&ccedil;ante informatis&eacute;e</i>) a &eacute;t&eacute; un projet pour la <a
+			href="https://www.defense.gouv.fr/marine">Marine Nationale</a> d&apos;affichage de la situation tactique
+		autour d&apos;un bateau depuis des donn&eacute;es reçues de diff&eacute;rent protocoles de communication (GPS,
+		L11, AIS, etc.).
+	</p>
+
+	<p>
+		Il s&apos;est agit de mettre en place un syst&egrave;me d&eacute;localis&eacute; de table tra&ccedil;ante
+		informatis&eacute;e permettant l&apos;affichage, l&apos;archivage et le rejeu de la situation tactique en temps
+		r&eacute;el.
+	</p>
+	<p>L&apos;objectif initial &eacute;tait de proposer une solution alternative &agrave; l&apos;utilisation des tables
+		tra&ccedil;antes vieillissantes et peu fiables sur FASM (fr&eacute;gate anti-sous-marine). Cependant
+		plusieurs autres unit&eacute;s ont manifest&eacute; leur int&eacute;r&ecirc;t depuis : les FDA (Force
+		d&apos;Action Navale) non &eacute;quip&eacute;es de table tra&ccedil;ante, certains b&acirc;timents de soutien
+		d&eacute;pourvus de syst&egrave;me de combat, etc. En pratique, le syst&egrave;me comprend :
+	</p>
+	<ul>
+		<li>Un ordinateur au CO (pr&egrave;s ou &agrave; la place de la table tra&ccedil;ante) sur lequel est
+			install&eacute; TTI : c&apos;est le poste administrateur, celui qui est charg&eacute; de &laquo; dessiner
+			&raquo; la situation tactique et de r&eacute;gler les
+			conflits d&apos;information;</li>
+		<li>Un serveur (au PC TELEC) sur lequel est install&eacute; TTIS (TTI Serveur): il
+			centralise et archive toutes les donn&eacute;es, les renvoie vers les autres ordinateurs du bord.</li>
+	</ul>
+	<p>
+		A partir de cette installation, n&apos;importe quel ordinateur connect&eacute; au r&eacute;seau bord et sur
+		lequel est install&eacute; TTI est en mesure d&apos;afficher et de rejouer la situation tactique.
+	</p>
+
+	<img src="../../imgs/TTI1.jpg" alt="Testes a bordo TTI - 1" width="100%" height="100%">
+
+	<figure>
+		<img src="../../imgs/TTI2.JPG" alt="Testes a bordo TTI - 2" width="100%" height="100%">
+		<figcaption>L&apos;&eacute;x&eacute;cution des testes &agrave; bord de la fr&eacute;gate <a
+				href="https://fr.wikipedia.org/wiki/Dupleix_(fr%C3%A9gate)">Dupleix</a> en janvier de 2011.</figcaption>
+	</figure>
+
+	<h2 id="cdf">COD do Futuro</h2>
+
+	<p>Le <em>COD do Futuro</em> (Centre de Contr&ocirc;le du Futur) s'agit d&apos;un projet de recherche et
+		d&eacute;veloppement (R&amp;D) de Cemig Distribui&ccedil;&atilde;o avec <a
+			href="https://www.concert.com.br/">Concert Technologies</a> pour mettre en place un syst&egrave;me de
+		traitement des donn&eacute;es venant du syst&egrave;me de contr&ocirc;le et d&apos;acquisition (SCADA), ayant
+		pour but d&apos;augmenter la conscience de la situation des op&eacute;rateurs du r&eacute;seau de distribution.
+	</p>
+	<p>Ainsi, les objectives principales sont:</p>
+	<ul>
+		<li>Mettre en place d&apos;un bus informatique permettant l&apos;&eacute;change d'information entre plusieurs
+			bases de donn&eacute;es;</li>
+		<li>Un syst&egrave;me efficace de <a href="https://en.wikipedia.org/wiki/Alarm_management">gestion des
+				alarmes</a>;</li>
+		<li>Usage d&apos;inf&eacute;rence statistique pour pr&eacute;voir la valeur de certaines grandeurs analogiques,
+			ce qui
+			permettra aux op&eacute;rateurs de savoir d&apos;avance les surcharges des &eacute;quipements.</li>
+	</ul>
+
+	<p>La participation dans ce projet a consist&eacute; &agrave; cr&eacute;er un syst&egrave;me de traitement des
+		grandeurs
+		analogiques par estimation d&apos;&eacute;tat, avec le d&eacute;veloppement d&apos;un outil qui envoie au
+		bus informatique les valeurs estim&eacute;es et pr&eacute;vient lors de la d&eacute;tection des erreurs
+		grossi&egrave;res.</p>
+</body>
+
+</html>

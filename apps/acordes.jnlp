@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+  spec="1.0+"
+  codebase="http://pereiraeng.com.br/apps/"
+  href="acordes.jnlp">
+  <information>
+    <title>Diagrama de trelicas</title>
+    <vendor>Pereira Engenharia</vendor>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.7+"/>
+    <jar href="acordes.jar"/>
+  </resources>
+  <application-desc main-class="constelacao.minart.hrm.chord.ChordsComposer"/>
+</jnlp> 

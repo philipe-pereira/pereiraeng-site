@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <script src="http://www.java.com/js/deployJava.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+    <style>
+        body {
+            font-size: 12pt;
+            font-family: arial, sans-serif;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>M&uacute;sica</h1>
+    <h2>Acordes em teclados e instrumentos de corda</h2>
+
+    <h3>Discretiza&ccedil;&atilde;o da faixa de frequ&ecirc;ncias sonoras</h3>
+
+    <p>
+        O som &eacute; uma onda mec&acirc;nica (i.e., ao contr&aacute;rio das ondas eletromagn&eacute;ticas, que
+        envolvem campos el&eacute;tricos e magn&eacute;ticos, o som &eacute; a oscila&ccedil;&atilde;o das
+        part&iacute;culas de um meio material, n&atilde;o podendo portanto se propagar no v&aacute;cuo) e longitudinal
+        (i.e., tamb&eacute;m ao contr&aacute;rio das ondas eletromagn&eacute;ticas, em que a oscila&ccedil;&atilde;o
+        &eacute; transversal &agrave; dire&ccedil;&atilde;o de propaga&ccedil;&atilde;o, no som a
+        oscila&ccedil;&atilde;o ocorre na mesma dire&ccedil;&atilde;o da propaga&ccedil;&atilde;o).
+    </p>
+    <p>
+        As ondas sonoras num dado meio material se caracterizam essencialmente por duas de suas propriedades:
+    </p>
+    <ul>
+        <li>Amplitude (aquilo que distingue um som alto de um som baixo, relacionado com a varia&ccedil;&atilde;o da
+            press&atilde;o que a onda provoca sobre do meio onde ele se propaga);</li>
+        <li>Frequ&ecirc;ncia (ou tom - aquilo que distingue um som agudo de um som grave, relacionado com per&iacute;odo
+            de tempo
+            entre duas cristas - ou dois vales - da onda propagada).</li>
+    </ul>
+    <p>
+        Seres humanos s&atilde;o capazes de ouvir ondas sonoras na faixa de frequ&ecirc;ncia entre 20 e 20.000 Hz (ainda
+        que essa faixa <a
+            href="https://www.echalk.co.uk/Science/biology/hearing/HowOldIsYourHearing/resource.html">varie para
+            diferentes pessoas</a>, em fun&ccedil;&atilde;o da idade e da sa&uacute;de auditiva). Embora essa faixa seja
+        cont&iacute;nua, existe um valor limiar a partir do qual cada ser humano &eacute; capaz de perceber uma
+        varia&ccedil;&atilde;o nessa frequ&ecirc;ncia.
+    </p>
+    <p>
+        Por esse motivo, a teoria musical ao longo da hist&oacute;ria convencionou maneiras de se <em>discretizar</em> a
+        faixa de frequ&ecirc;ncias com a qual os instrumentos musicais trabalham. Al&eacute;m da intr&iacute;nseca
+        limita&ccedil;&atilde;o humana de ser capaz de perceber pequenas varia&ccedil;&otilde;es na frequ&ecirc;ncia, a
+        discretiza&ccedil;&atilde;o cumpre com outros objetivos:
+    </p>
+    <ul>
+        <li>Limita&ccedil;&otilde;es do instrumentos musicais: Alguns instrumentos (como o piano, por exemplo),
+            n&atilde;o podem produzir notas musicais com valores de uma frequ&ecirc;ncia intermedi&aacute;ria entre duas
+            teclas cont&iacute;guas, de modo que a discretiza&ccedil;&atilde;o nesse caso &eacute; necess&aacute;ria
+            pela natureza mesma do instrumento;</li>
+        <li>Nota&ccedil;&atilde;o: ainda que um instrumento possa gerar toda a gama de frequ&ecirc;ncias da faixa do som
+            aud&iacute;vel, seria imposs&iacute;vel representar (e interpretar) graficamente as m&iacute;nimas
+            varia&ccedil;&otilde;es na frequ&ecirc;ncia das notas que poderiam ser produzidas. Assim, as formas de se
+            representar diferentes notas musicias for&ccedil;am uma discretiza&ccedil;&atilde;o da escala (no caso do
+            modelo ocidental, essa discretiza&ccedil;&atilde;o &eacute; simbolizada pela pauta, representada por 5
+            linhas horizontais);</li>
+        <li>Quest&otilde;es est&eacute;ticas: a combina&ccedil;&atilde;o de sons de frequ&ecirc;ncias muito
+            pr&oacute;ximas umas das outras pode produzir efeitos de cacofonia, de modo que &eacute; interessante
+            estabelecer um intervalo de frequ&ecirc;ncia entre duas notas.
+        </li>
+    </ul>
+    <p>
+        O &uacute;ltimo ponto apresentado levanta uma quest&atilde;o importante: se devemos trabalhar valores de
+        frequ&ecirc;ncias intervalados, como definir esses intervalos?
+    </p>
+
+    <h3>Escalas e modos musicais</h3>
+
+    <p>N&atilde;o est&aacute; no escopo deste texto explicar as origens da escala musical do ocidente, mas de maneira
+        muito resumida, as notas musicais s&atilde;o definidas da seguinte maneira:</p>
+
+    <ul>
+        <li>Define-se uma frequ&ecirc;ncia como refer&ecirc;ncia. Segundo a norma <a
+                href="https://en.wikipedia.org/wiki/A440_(pitch_standard)">ISO 16</a>, esta frequ&ecirc;ncia &eacute; de
+            440 Hz
+            (L&aacute; - A<sub>4</sub>);
+        </li>
+        <li>Todas as frequ&ecirc;ncias m&uacute;ltiplas (ou divididas) de 2 s&atilde;o denominadas da mesma maneira
+            (exemplo: 880 Hz tamb&eacute;m
+            corresponde &agrave; nota L&aacute;, por&eacute;m <i>uma oitava</i> acima);</li>
+        <li>As frequ&ecirc;ncias entre duas oitavas s&atilde;o repartidas em 12 intervalos, espa&ccedil;ados n&atilde;o
+            aritmeticamente, mas <i>geometricamente</i> (ou seja, a raz&atilde;o da frequ&ecirc;ncia entre duas notas
+            cont&iacute;g&uuml;as ser&aacute; a raiz duod&eacute;cima de 2). Diz-se que uma nota est&aacute; um
+            <em>semitom</em> acima de outra quando sua frequ&ecirc;ncia &eacute; \( \sqrt[12]{2} \) vezes maior (ou
+            seja, um intervalo de dist&acirc;ncia), enquanto que uma nota est&aacute; um <em>tom</em> acima de outra
+            quando sua frequ&ecirc;ncia &eacute; \( \sqrt[6]{2} \) vezes maior (ou seja, dois intervalos de
+            dist&acirc;ncia). A express&atilde;o que d&aacute; os valores de todas as frequ&ecirc;ncias das notas
+            &eacute; dada por:
+        </li>
+    </ul>
+
+    $$f_i = 440 \times 2^{ i - 69 \over 12} \text{ onde } \{i \in \mathbb{Z} \mid 15 \lt i \lt 136 \}$$
+
+
+
+    <p>
+        Em uma escala linear, tem-se:
+    </p>
+
+    <svg id="pitchLin" width="1250" height="300" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="150" x2="1200" y2="150" style="stroke:rgb(255,0,0);stroke-width:2" />
+        <text x="1200" y="150">f (Hz)</text>
+    </svg>
+
+    <p>
+        e em uma escala logar&iacute;tmica, tem-se:
+    </p>
+
+    <svg id="pitchLog" width="1250" height="300" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="150" x2="1200" y2="150" style="stroke:rgb(255,0,0);stroke-width:2" />
+        <text x="1200" y="150">f (Hz)</text>
+    </svg>
+
+    <p>
+        As notas mostradas nas figuras acima s&atilde;o aquelas dispon&iacute;veis para a composi&ccedil;&atilde;o de
+        uma m&uacute;sica no padr&atilde;o ocidental. Por&eacute;m as m&uacute;sicas, em geral, n&atilde;o se valem de
+        todas as notas dispon&iacute;veis, mas somente de algumas delas, selecionadas a partir de um dado
+        espa&ccedil;amento peri&oacute;dico.
+    </p>
+
+
+
+    <p>
+        <em>Escalas musicais</em> s&atilde;o as dist&acirc;ncias estabelecidas entre as notas que ser&atilde;o
+        utilizadas em uma dada composi&ccedil;&atilde;o. Uma can&ccedil;&atilde;o que utiliza todas as notas
+        dispon&iacute;veis vale-se da <em>escala crom&aacute;tica</em>. Quando a dist&acirc;ncia entre as notas obedece
+        o padr&atilde;o:
+    </p>
+    <p>
+        Tom - Tom - Semitom - Tom - Tom - Tom - Semitom
+    </p>
+    <p>
+        diz-se que a m&uacute;sica utiliza uma <em>escala maior</em>. Se os espa&ccedil;amentos s&atilde;o dados pelo
+        padr&atilde;o:
+    </p>
+    <p>
+        Tom - Semitom - Tom - Tom - Semitom - Tom - Tom
+    </p>
+    <p>
+        diz-se que a m&uacute;sica utiliza uma <em>escala menor</em>. Uma vez definida a escala, o <em>modo</em> (ou
+        tonalidade) &eacute; dado com base em uma nota a partir do qual o padr&atilde;o acima vai se repetir. Por
+        exemplo, o modo L&aacute; maior define as seguinte notas:
+    </p>
+
+    <img src="../../imgs/LaMaior.png" alt="La Maior" width="310" height="329">
+
+    <p>
+        Assim, uma can&ccedil;&atilde;o em L&aacute; maior possui somente as notas: A, B, C#, D, E, F#, G#, A
+    </p>
+
+    <p>
+        Embora a imensa maioria das can&ccedil;&otilde;es utilize os modos maior (j&ocirc;nio) e menor (e&oacute;lio),
+        existem mais de 200 escalas e quase 1500 modos que podem ser utilizados. Este excelente <a
+            href="https://allthescales.org/index.php">website</a> mostra todas essas poss&iacute;veis
+        combina&ccedil;&otilde;es (e lhes atribui nomes), indicando como s&atilde;o vastas as possibilidades. Vale
+        lembrar que, embora uma can&ccedil;&atilde;o em um dado modo utilize exclusivamente as notas por ele
+        definidas, nada impede o compositor de fugir dessa regra introduzindo notas que n&atilde;o pertencem
+        &agrave;quele modo (de modo a obter um dado efeito est&eacute;tico - pode-se n&atilde;o seguir as regras,
+        <i>desde que voc&ecirc; sabia o que est&aacute; fazendo e quais são as consequências</i>).
+    </p>
+
+    <h3>Acordes</h3>
+
+    <p>
+        Uma vez que se escolheu o modo que uma dada can&ccedil;&atilde;o (ou seja, quais notas a serem utilizadas e
+        quais n&atilde;o), surge a seguinte quest&atilde;o: pode-se combinar diferentes notas? E, em caso afirmativo,
+        essa combina&ccedil;&atilde;o deve seguir alguma regra?
+    </p>
+
+    <p>A resposta &eacute; sim, e as regras para combina&ccedil;&atilde;o de diferentes notas s&atilde;o dadas pelos
+        <em>acordes</em>: grupos de 3 a 4 notas que, ao serem combinadas, produzem um efeito euf&ocirc;nico. Os acordes
+        mais comuns s&atilde;o:
+    </p>
+
+    <ul>
+        <li>Maior: consiste numa dada nota, uma segunda nota dois tons acima da primeira e uma terceira nota tr&ecirc;s
+            semitons acima segunda;</li>
+        <li>Menor: consiste numa dada nota, uma segunda nota tr&ecirc;s semitons acima da primeira e uma terceira nota
+            dois tons acima segunda;</li>
+        <li>Diminuto: consiste numa dada nota, uma segunda nota tr&ecirc;s semitons acima da primeira e uma terceira
+            nota tr&ecirc;s semitons acima segunda;</li>
+        <li>S&eacute;tima dominante: as mesmas tr&ecirc;s notas do acorde maior e mais uma quarta nota um tom abaixo da
+            primeira.</li>
+    </ul>
+
+    <p>
+        Uma vez que as notas que podem ser usadas numa dada can&ccedil;&atilde;o j&aacute; est&atilde;o
+        pr&eacute;-estabelecidadas pelo seu modo, definidos tamb&eacute;m est&atilde;o os acordes que podem ser tocados.
+        Voltando ao exemplo do modo L&aacute; maior, tem-se os seguintes acordes poss&iacute;veis:
+    <p>
+
+    <table>
+        <tr>
+            <th>Notas</th>
+            <th>Acorde</th>
+            <th>Designa&ccedil;&atilde;o</th>
+        </tr>
+        <tr>
+            <td>A, C#, E</td>
+            <td>L&aacute; maior</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>B, D, F#</td>
+            <td>Si menor</td>
+            <td>ii</td>
+        </tr>
+        <tr>
+            <td>C#, E, G#</td>
+            <td>D&oacute; sustenido menor</td>
+            <td>iii</td>
+        </tr>
+        <tr>
+            <td>D, F#, A</td>
+            <td>R&eacute; maior</td>
+            <td>IV</td>
+        </tr>
+        <tr>
+            <td>E, G#, B</td>
+            <td>Mi maior</td>
+            <td>V</td>
+        </tr>
+        <tr>
+            <td>F#, A, C#</td>
+            <td>F&aacute; sustenido menor</td>
+            <td>vi</td>
+        </tr>
+        <tr>
+            <td>G#, B, D</td>
+            <td>Sol sustenido diminuto</td>
+            <td>vii<sup>0</sup></td>
+        </tr>
+    </table>
+    </p>
+    Para além disso, ao longo de uma canção, diferentes acordes produzem diferentes <em>sensações</em> no ouvinte, o
+    que é estudado pelo <a href="https://en.wikipedia.org/wiki/Function_(music)">harmonia funcional</a>. Como regra
+    b&aacute;sica para quem est&aacute; come&ccedil;ando no assunto, tem-se que:
+    </p>
+
+    <ul>
+        <li>A fun&ccedil;&atilde;o t&ocirc;nica (I, iii e vi) transmiste uma sensa&ccedil;&atilde;o de estabilidade,
+            aquilo que
+            indicaria o curso natural da can&ccedil;&atilde;o;
+        </li>
+        <li>A fun&ccedil;&atilde;o dominante (V e vii<sup>0</sup>) transmiste uma sensa&ccedil;&atilde;o de
+            instabilidade, de tens&atilde;o,
+            algo que geraria uma apreens&atilde;o no ouvinte;</li>
+        <li>A fun&ccedil;&atilde;o subdominante (ii e iv) serve de transi&ccedil;&atilde;o entre as duas anteriores,
+            seja para
+            prenunciar a instabilidade que vir&aacute; com a fun&ccedil;&atilde;o dominante ou como al&iacute;vio,
+            resolu&ccedil;&atilde;o, fechamento desta instabilidade e retorno para a t&ocirc;nica.</li>
+    </ul>
+
+    <p>
+        Foi com intuito de mostrar os diferentes acordes e de como sintetiza-los em instrumentos de corda e teclado que
+        o aplicativo abaixo apresentado foi concebido. Nele, &eacute; poss&iacute;vel mostrar os diferentes acordes na
+        pauta assim os meios de produz&iacute;-los em diferentes instrumentos.
+    </p>
+
+    <img src="../../imgs/chord1.png" alt="Acordes - print 01" width="633" height="521">
+
+    <img src="../../imgs/chord2.png" alt="Acordes - print 02" width="633" height="521">
+
+    <embed src="../jws.html" width="830" height="50">
+    <script>
+        var url = "http://pereiraeng.com.br/apps/acordes.jnlp";
+        deployJava.createWebStartLaunchButton(url, '1.7.0');
+    </script>
+    <a href="../../apps/acordes.jnlp">[Launch]</a>
+
+    <script type="text/javascript" src="pitch.js"></script>
+</body>
+
+</html>

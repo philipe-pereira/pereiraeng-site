@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="utf-8">
+	<script src="http://www.java.com/js/deployJava.js"></script>
+	<style type="text/css">
+		body {
+			font-size: 12pt;
+			font-family: arial, sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Engenharia El&eacute;trica</h1>
+
+	<hr style="height: 2px">
+	<nav>
+		<ul>
+			<li><a href="#wf">Forma de onda PWM</a></li>
+			<li><a href="#pwmMods">Modula&ccedil;&otilde;es PWM</a></li>
+			<li><a href="#imrps">Motor de indu&ccedil;&atilde;o em regime permanente</a></li>
+			<li><a href="#fw">Enfraquecimento de campo</a></li>
+			<li><a href="#trelicas">Diagrama de treli&ccedil;as</a></li>
+			<li><a href="#smith">Carta de Smith</a></li>
+		</ul>
+	</nav>
+	<hr style="height: 2px">
+
+	<h2>Acionamentos el&eacute;tricos</h2>
+
+	<h3 id="wf">Forma de onda PWM</h3>
+	<p align="right">
+		Em coopera&ccedil;&atilde;o com <a href="http://helderdepaula.com.br/">Helder
+			de Paula</a>
+	</p>
+	<p>
+		Acionamentos el&eacute;tricos utilizam inversores para controlar a velocidade (e, em alguns casos, a
+		posi&ccedil;&atilde;o e/ou o torque) de um motor de indu&ccedil;&atilde;o. A maior parte destes inversores
+		sintetizam formas de onda de tens&atilde;o e corrente a partir da t&eacute;cnica de modula&ccedil;&atilde;o por
+		largura de pulso (PWM, <i>pulse width modulation</i>, em ingl&ecirc;s).
+	</p>
+
+	<img src="../../imgs/wf.png" alt="Forma de onda PWM - print" width="1174" height="564">
+
+	<embed src="../jws.html" width="830" height="50">
+	<script>
+		var url = "http://pereiraeng.com.br/apps/pwmwf.jnlp";
+		deployJava.createWebStartLaunchButton(url, '1.7.0');
+	</script>
+	<a href="../../apps/pwmwf.jnlp">[Launch]</a>
+
+	<h3 id="pwmMods">Modula&ccedil;&otilde;es PWM</h3>
+	<!-- recuperar o simulink PWM -->
+	<p align="right">
+		Em coopera&ccedil;&atilde;o com <a href="http://helderdepaula.com.br/">Helder
+			de Paula</a>
+	</p>
+
+	<img src="../../imgs/pwmMods.png" alt="Modulacoes PWM - print" width="779" height="518">
+
+	<embed src="../jws.html" width="830" height="50">
+	<script>
+		var url = "http://pereiraeng.com.br/apps/pwmmods.jnlp";
+		deployJava.createWebStartLaunchButton(url, '1.7.0');
+	</script>
+	<a href="../../apps/pwmmods.jnlp">[Launch]</a>
+
+	<h3 id="imrps">Motor de indu&ccedil;&atilde;o em regime permanente</h3>
+	<p align="right">
+		Em coopera&ccedil;&atilde;o com <a href="http://helderdepaula.com.br/">Helder
+			de Paula</a>
+	</p>
+
+	<img src="../../imgs/imrps.png" alt="Induction Motor SS - print" width="784" height="559">
+
+	<embed src="../jws.html" width="830" height="50">
+	<script>
+		var url = "http://pereiraeng.com.br/apps/imrps.jnlp";
+		deployJava.createWebStartLaunchButton(url, '1.7.0');
+	</script>
+	<a href="../../apps/imrps.jnlp">[Launch]</a>
+
+	<!--	
+		<h3>Partida do motor de indu&ccedil;&atilde;o</h3>
+	<p align="right">
+		Em mem&oacute;ria de Sel&ecirc;nio Rocha Silva (1958-2014)<br>Que
+		Nosso Senhor o tenha na vida eterna.
+	</p>
+	-->
+
+	<h3 id="fw">Enfraquecimento de campo</h3>
+
+	<img src="../../imgs/fw.png" alt="Field weakening - print" width="726" height="521">
+
+	<embed src="../jws.html" width="830" height="50">
+	<script>
+		var url = "http://pereiraeng.com.br/apps/fw.jnlp";
+		deployJava.createWebStartLaunchButton(url, '1.7.0');
+	</script>
+	<a href="../../apps/fw.jnlp">[Launch]</a>
+
+	<h2>Linhas de transmiss&atilde;o</h2>
+
+	<h3 id="trelicas">Diagrama de treli&ccedil;as</h3>
+	<p align="right">
+		Em coopera&ccedil;&atilde;o com <a
+			href="https://www.poli.usp.br/institucional/diretoria/galeria-de-diretores/jose-roberto-cardoso">Jos&eacute;
+			Roberto Cardoso</a>
+	</p>
+
+	<img src="../../imgs/bounce1.png" alt="Bounce diagram - print" width="945" height="768">
+
+	<embed src="../jws.html" width="830" height="50">
+	<script>
+		var url = "http://pereiraeng.com.br/apps/bounce.jnlp";
+		deployJava.createWebStartLaunchButton(url, '1.7.0');
+	</script>
+	<a href="../../apps/bounce.jnlp">[Launch]</a>
+
+	<h4>Refer&ecirc;ncias</h4>
+
+	<a href="https://books.google.com.br/books?id=zPRCYgEACAAJ">Cardoso, Jos&eacute; Roberto. Engenharia
+		Eletromagn&eacute;tica. S&atilde;o Paulo, Elsevier, 2011</a>
+
+	<h3 id="smith">Carta de Smith</h3>
+
+	<p align="right">
+		Em coopera&ccedil;&atilde;o com <a
+			href="https://www.poli.usp.br/institucional/diretoria/galeria-de-diretores/jose-roberto-cardoso">Jos&eacute;
+			Roberto Cardoso</a>
+	</p>
+
+	<img src="../../imgs/smith1.png" alt="Carta de Smith - print" width="826" height="853">
+
+	<embed src="../jws.html" width="830" height="50">
+	<script>
+		var url = "http://pereiraeng.com.br/apps/smith.jnlp";
+		deployJava.createWebStartLaunchButton(url, '1.7.0');
+	</script>
+	<a href="../../apps/smith.jnlp">[Launch]</a>
+
+	<h4>Refer&ecirc;ncias</h4>
+
+	<a href="https://books.google.com.br/books?id=zPRCYgEACAAJ">Cardoso, Jos&eacute; Roberto. Engenharia
+		Eletromagn&eacute;tica. S&atilde;o Paulo, Elsevier, 2011</a>
+</body>
+
+</html>

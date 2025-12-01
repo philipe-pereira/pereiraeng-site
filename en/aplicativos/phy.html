@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<script src="http://www.java.com/js/deployJava.js"></script>
+
+	<style type="text/css">
+		body {
+			font-size: 12pt;
+			font-family: arial, sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Physics</h1>
+
+	<h2>Skin effect and Eddy current</h2>
+	<p align="right">
+		In cooperation with <a
+			href="https://www.poli.usp.br/institucional/diretoria/galeria-de-diretores/jose-roberto-cardoso">Jos&eacute;
+			Roberto Cardoso</a>
+	</p>
+
+	<p>
+		In electrical systems operating with alternating voltages and currents, there is a phenomenon called <em>skin
+			effect</em>, in which currents tend to distribute all over the surface of the conductor instead of an
+		uniform distribution through its cross section. This is due to the fact that the alternating current
+		produces an alternating magnetic field, which induces voltages that makes the currents flow mainly through the
+		surface of the conductor.
+	</p>
+
+	<p>
+		In a similar way, an alternating magnetic flux induces currents in a conductor material, that in turn produces
+		a magnetic field that disturbs its distribution through its cross section, a phenomenon known as <em>eddy
+			currents</em>.
+	</p>
+
+	<p>
+		With the purpose of illustrating both phenomena, the following app was created. It is possible to show the
+		current density and the magnetic flux density vectors for different materials and different frequency values. It
+		is important to highlight the fact that, although these effects are distinct and observed in different
+		components (skin effect occurs in electrical cables, being the reason why aluminium cables have their core
+		often <a href="https://en.wikipedia.org/wiki/Aluminium-conductor_steel-reinforced_cable">replaced by steel</a>,
+		which increases their mechanical properties without significant changes in their conductivity, while the eddy
+		currents are observed in electrical machines - such transformers and induction motors - that along with the
+		hysteresis effect is commonly termed iron loss, being the reason why these machines' cores are made out of thin
+		laminations which have an insulating coating), both phenomena are quite similar, show a certain symmetry.
+	</p>
+
+	<img src="../../imgs/seec.png" alt="Skin effect and eddy currents" width="644" height="660">
+
+	<embed src="../jws.html" width="670" height="50">
+	<script>
+		var url = "https://pereiraeng.com.br/apps/seec.jnlp";
+		deployJava.createWebStartLaunchButton(url, '1.7.0');
+	</script>
+	<a href="../../apps/seec.jnlp">[Launch]</a>
+
+	<h3>References</h3>
+
+	<a href="https://www.se.com/us/en/download/document/ECT083/">Extra losses caused in high current conductors by skin
+		and proximity effects</a>
+
+	<!-- <h2>MHD generator</h2> -->
+
+</body>
+
+</html>
