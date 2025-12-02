@@ -215,3 +215,45 @@ body {
     margin-bottom: 10px;
     display: inline-block;
 }
+
+/* ==========================
+   PORTFOLIO v2
+========================== */
+
+.card {
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.05);
+    transition: 0.25s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #003f6f;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.card-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #0062a8;
+}
+
+.card-link:hover {
+    color: #003f6f;
+    text-decoration: underline;
+}
