@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 310 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <text x="0" y="50"
+          font-family="Inter, Arial, sans-serif"
+          font-size="50"
+          font-weight="700"
+          fill="#0077C2">
+        P
+    </text>
+
+    <text x="40" y="50"
+          font-family="Inter, Arial, sans-serif"
+          font-size="50"
+          font-weight="700"
+          fill="#003F6F">
+        E
+    </text>
+
+</svg>

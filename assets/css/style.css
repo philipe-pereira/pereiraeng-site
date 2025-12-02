@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #222;
     background-color: #f4f4f7;
     line-height: 1.6;
@@ -202,7 +202,7 @@ body {
     text-align: center;
 }
 
-.section-text + .section-text {
+.section-text+.section-text {
     margin-top: 15px;
 }
 
@@ -225,13 +225,13 @@ body {
     background: #fff;
     border-radius: 10px;
     border: 1px solid #d0d0d0;
-    box-shadow: 0 2px 7px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05);
     transition: 0.25s ease-in-out;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
@@ -336,7 +336,9 @@ body {
 }
 
 @keyframes fade {
-    to { opacity: 1; }
+    to {
+        opacity: 1;
+    }
 }
 
 .slide-up {
@@ -350,4 +352,71 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* TITLES REFINED */
+.section-title {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* HEADER SHADOW */
+.header {
+    background-color: #ffffffcc;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* BUTTON PREMIUM */
+.btn-primary {
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade 0.8s ease-out forwards;
+}
+
+@keyframes fade {
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.9s ease-out forwards;
+}
+
+@keyframes slideUp {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* LOGO */
+.logo img,
+.logo-img {
+    height: 38px;
+    width: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.logo img {
+    opacity: 0;
+    animation: fade 0.8s ease-out forwards;
 }

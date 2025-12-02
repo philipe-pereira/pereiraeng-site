@@ -5,14 +5,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Philipe Pereira – Engenheiro & Desenvolvedor</title>
+    <title>PereiraEng – Engenharia & Desenvolvimento</title>
     <meta name="description"
-        content="Philipe Pereira – Engenheiro eletricista e desenvolvedor sênior em Montreal. Portfólio técnico, projetos e contato profissional.">
+        content="Portfólio profissional de Philipe Pereira — Engenheiro eletricista e desenvolvedor sênior em Montreal.">
 
+    <meta property="og:title" content="PereiraEng – Engenharia & Desenvolvimento">
+    <meta property="og:description" content="Projetos, simulações, applets, ferramentas técnicas e consultoria.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../assets/images/preview.png">
+    <meta property="og:url" content="https://pereiraeng.com.br">
+
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/style.css" />
-
-    <!-- Favicon futuro -->
-    <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
 </head>
 
 <body>
@@ -20,7 +27,9 @@
     <header class="header">
         <div class="container nav-container">
             <div class="logo">
-                <a href="#">Pereira<span>Eng</span></a>
+                <a href="../pt/index.html">
+                    <img src="../assets/images/logo.svg" alt="PereiraEng" height="40">
+                </a>
             </div>
 
             <nav class="nav">
@@ -89,85 +98,85 @@
 
     <!-- ================= PORTFÓLIO ================= -->
     <section id="portfolio" class="section bg-light">
-    <div class="container">
-        <h2 class="section-title">Portfólio</h2>
+        <div class="container">
+            <h2 class="section-title">Portfólio</h2>
 
-        <p class="section-text">
-            Uma seleção dos meus projetos profissionais e experimentais. 
-            Em breve, applets Java serão migrados para WebGL e incluídos aqui 
-            como demonstrações interativas.
-        </p>
+            <p class="section-text">
+                Uma seleção dos meus projetos profissionais e experimentais.
+                Em breve, applets Java serão migrados para WebGL e incluídos aqui
+                como demonstrações interativas.
+            </p>
 
-        <div class="portfolio-grid">
-            
-            <!-- CARD 1 -->
-            <div class="card">
-                <div class="card-header">Simulador Elétrico</div>
-                <p class="card-text">
-                    Protótipo de simulação em tempo real com modelos simplificados de redes elétricas.
-                </p>
-                <a href="../portfolio/simulador-eletrico/index.html" class="card-link">
-                    Ver Projeto →
-                </a>
+            <div class="portfolio-grid">
+
+                <!-- CARD 1 -->
+                <div class="card">
+                    <div class="card-header">Simulador Elétrico</div>
+                    <p class="card-text">
+                        Protótipo de simulação em tempo real com modelos simplificados de redes elétricas.
+                    </p>
+                    <a href="../portfolio/simulador-eletrico/index.html" class="card-link">
+                        Ver Projeto →
+                    </a>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card">
+                    <div class="card-header">Ferramentas de Automação</div>
+                    <p class="card-text">
+                        Conjunto de utilidades e integrações para análise e diagnóstico industrial.
+                    </p>
+                    <a href="../portfolio/automacao-industrial/index.html" class="card-link">
+                        Ver Projeto →
+                    </a>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card">
+                    <div class="card-header">Applets Java (Legado)</div>
+                    <p class="card-text">
+                        Coleção dos meus applets clássicos, originalmente em JNLP.
+                        Serão migrados para WebGL.
+                    </p>
+                    <a href="../portfolio/applets-java/index.html" class="card-link">
+                        Ver Projeto →
+                    </a>
+                </div>
+
             </div>
-
-            <!-- CARD 2 -->
-            <div class="card">
-                <div class="card-header">Ferramentas de Automação</div>
-                <p class="card-text">
-                    Conjunto de utilidades e integrações para análise e diagnóstico industrial.
-                </p>
-                <a href="../portfolio/automacao-industrial/index.html" class="card-link">
-                    Ver Projeto →
-                </a>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="card">
-                <div class="card-header">Applets Java (Legado)</div>
-                <p class="card-text">
-                    Coleção dos meus applets clássicos, originalmente em JNLP. 
-                    Serão migrados para WebGL.
-                </p>
-                <a href="../portfolio/applets-java/index.html" class="card-link">
-                    Ver Projeto →
-                </a>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- ================= CONTATO ================= -->
     <section id="contato" class="section">
-    <div class="container">
-        <h2 class="section-title">Contato</h2>
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
 
-        <p class="section-text">
-            Entre em contato para consultoria, colaborações ou oportunidades profissionais.
-            Sua mensagem será enviada diretamente para meu e-mail.
-        </p>
+            <p class="section-text">
+                Entre em contato para consultoria, colaborações ou oportunidades profissionais.
+                Sua mensagem será enviada diretamente para meu e-mail.
+            </p>
 
-        <form action="https://formsubmit.co/pereiraeng@proton.me" method="POST" class="contact-form">
+            <form action="https://formsubmit.co/pereiraeng@proton.me" method="POST" class="contact-form">
 
-            <!-- Segurança -->
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="box">
+                <!-- Segurança -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
 
-            <label>Nome</label>
-            <input type="text" name="nome" required>
+                <label>Nome</label>
+                <input type="text" name="nome" required>
 
-            <label>Email</label>
-            <input type="email" name="email" required>
+                <label>Email</label>
+                <input type="email" name="email" required>
 
-            <label>Mensagem</label>
-            <textarea name="mensagem" rows="5" required></textarea>
+                <label>Mensagem</label>
+                <textarea name="mensagem" rows="5" required></textarea>
 
-            <button type="submit" class="btn-primary" style="margin-top:15px;">Enviar</button>
-        </form>
+                <button type="submit" class="btn-primary" style="margin-top:15px;">Enviar</button>
+            </form>
 
-    </div>
-</section>
+        </div>
+    </section>
 
     <!-- ================= FOOTER ================= -->
     <footer class="footer">
