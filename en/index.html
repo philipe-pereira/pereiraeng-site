@@ -128,20 +128,32 @@
 
     <!-- =============== CONTACT =============== -->
     <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
 
-            <p class="section-text">
-                Feel free to reach out for consultancy, collaborations, or engineering/software opportunities.
-            </p>
+        <p class="section-text">
+            Get in touch for consulting, collaborations, or professional opportunities. 
+            Your message will be sent directly to my email.
+        </p>
 
-            <div class="contato-info">
-                <p>Email: <strong>philipe.pereira@live.com</strong></p>
-                <p>LinkedIn: <a href="#" target="_blank">Your LinkedIn</a></p>
-                <p>GitHub: <a href="https://github.com/philipe-pereira" target="_blank">@philipe-pereira</a></p>
-            </div>
-        </div>
-    </section>
+        <form action="https://formsubmit.co/pereiraeng@proton.me" method="POST" class="contact-form">
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="box">
+
+            <label>Name</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Message</label>
+            <textarea name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn-primary" style="margin-top:15px;">Send</button>
+        </form>
+    </div>
+</section>
 
     <!-- =============== FOOTER =============== -->
     <footer class="footer">

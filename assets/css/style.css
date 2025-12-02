@@ -257,3 +257,97 @@ body {
     color: #003f6f;
     text-decoration: underline;
 }
+
+/* ==========================
+   MOBILE  < 768px
+========================== */
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        margin-top: 10px;
+    }
+
+    .nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-text {
+        font-size: 1rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* ==========================
+   CONTACT FORM
+========================== */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #0077c2;
+    box-shadow: 0 0 4px rgba(0, 119, 194, 0.3);
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade 0.9s forwards;
+}
+
+@keyframes fade {
+    to { opacity: 1; }
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: up 0.9s forwards;
+}
+
+@keyframes up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
