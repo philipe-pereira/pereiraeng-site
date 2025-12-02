@@ -201,3 +201,17 @@ body {
     padding: 20px 0;
     text-align: center;
 }
+
+.section-text + .section-text {
+    margin-top: 15px;
+}
+
+.sobre-buttons {
+    margin-top: 25px;
+}
+
+.sobre-buttons a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
